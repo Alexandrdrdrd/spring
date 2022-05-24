@@ -9,7 +9,18 @@ public class Employee {
     private int salary;
     private String department;
 
+    private String[] languages;
+
     private Map<String, String> carBrands;
+
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
 
     public Map<String, String> getCarBrands() {
         return carBrands;
