@@ -1,10 +1,16 @@
 package com.sasha.spring.mvc;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min=2, message = "name must be more then 2 symbols")
     private String name;
+    @NotBlank(message = "must be not null")
     private String surname;
     private int salary;
     private String department;
